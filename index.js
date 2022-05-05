@@ -8,7 +8,6 @@ import { movieRoute } from "./routes/movie.js";
 dotenv.config();
 const app = express();
 await mongo.connectDB();
-const PORT = process.env.PORT;
 app.use(express.json());
 app.use(cors());
 app.get("/", (req, res) => {
@@ -16,5 +15,5 @@ app.get("/", (req, res) => {
 });
 app.use("/api/registration", registerRoute);
 app.use("/api/movies", movieRoute);
-
+const PORT=9000;
 app.listen(PORT, () => console.log(`Server running successfully on ${PORT}`));

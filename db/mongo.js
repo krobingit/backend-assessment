@@ -2,7 +2,7 @@ import { MongoClient } from "mongodb";
 import dotenv from "dotenv";
 dotenv.config();
 
-const mongoClient = new MongoClient(process.env.MONGODB_URL);
+const mongoClient = new MongoClient("mongodb+srv://robinlio:9790199718@cluster0.nev0r.mongodb.net");
 
 let mongo = {
   db: null,
