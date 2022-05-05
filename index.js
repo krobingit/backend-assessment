@@ -3,6 +3,7 @@ import express from "express";
 import cors from "cors";
 import { registerRoute } from "./routes/registration.js";
 import {mongo} from "./db/mongo.js"
+import { movieRoute } from "./routes/movie.js";
 
 dotenv.config();
 const app = express();
@@ -14,5 +15,6 @@ app.get("/", (req, res) => {
   res.send({ message: "Server for Backend Assessment Task" });
 });
 app.use("/api/registration", registerRoute);
+app.use("/api/movies", movieRoute);
 
-app.listen(PORT, () => console.log("Server running successfully"));
+app.listen(PORT, () => console.log(`Server running successfully on ${PORT}`));

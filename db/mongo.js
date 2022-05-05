@@ -12,6 +12,7 @@ let mongo = {
     console.log("MongoDB Connected");
     this.db = mongoClient.db("Backend_Assessment");
     this.users = this.db.collection("users");
+    this.movies=this.db.collection("movies");
   },
 };
 
