@@ -1,3 +1,3 @@
-# Registration-Crud-Server
+# Movies-Crud-Server
 
-Deployed link on Heroku - https://registration-crud-server.herokuapp.com/
+Deployed link on Heroku - 
