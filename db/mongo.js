@@ -7,6 +7,7 @@ const mongoClient = new MongoClient("mongodb+srv://robinlio:9790199718@cluster0.
 let mongo = {
   db: null,
   users: null,
+  movies:null,
   async connectDB() {
     await mongoClient.connect();
     console.log("MongoDB Connected");
